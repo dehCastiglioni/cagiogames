@@ -1,0 +1,165 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./site.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Skranji&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="./site.js"></script>
+</head>
+
+<body>
+  <div class="conteudo-header">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cagio Games</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/banner/outrun-wallpaper-1920x600.jpg" class="d-block w-100" alt="banner-pagina">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="container">
+    <div class="row linha-games">
+      <div class="col-md-3">
+        <div class="card" onclick="salvarEAbrirNovaPagina(this)" data-nome="Top Gear" data-imagem="topGear"
+          data-qtd_imagem="6" data-descricao="[Top Gear] Clássico dos jogos de corrida.">
+          <img src="./img/card/topGear.jpeg" class="card-img-top" alt="topGear">
+          <div class="card-body">
+            <h5 class="card-title">Top Gear</h5>
+            <p class="card-text">Clássico dos jogos de corrida.</p>
+            <img src="./img/icone/heart-fill.svg" alt="icone-like" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" onclick="salvarEAbrirNovaPagina(this)" data-nome="Sonic" data-imagem="sonic"
+          data-qtd_imagem="4" data-descricao="[Sonic] O querido ouriço da SEGA.">
+          <img src="./img/card/sonic.jpg" class="card-img-top" alt="sonic">
+          <div class="card-body">
+            <h5 class="card-title">Sonic</h5>
+            <p class="card-text">O querido ouriço da SEGA.</p>
+            <img src="./img/icone/heart-fill.svg" alt="icone-like" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" onclick="salvarEAbrirNovaPagina(this)" data-nome="The Legend of Zelda" data-imagem="zelda"
+          data-qtd_imagem="6" data-descricao="[The Legend of Zelda] O herói de Hyrule vivendo grandes aventuras.">
+          <img src="./img/card/zelda.jpg" class="card-img-top" alt="cs_go">
+          <div class="card-body">
+            <h5 class="card-title">The Legend of Zelda</h5>
+            <p class="card-text">O herói de Hyrule vivendo grandes aventuras..</p>
+            <img src="./img/icone/heart-fill.svg" alt="icone-like" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" onclick="salvarEAbrirNovaPagina(this)" data-nome="Pokemon" data-imagem="pokemon"
+          data-qtd_imagem="4" data-descricao="[Pokemon] Explore o mundo para ser um mestre Pokémon.">
+          <img src="./img/card/pokemon.jpg" class="card-img-top" alt="pokemon">
+          <div class="card-body">
+            <h5 class="card-title">Pokémon</h5>
+            <p class="card-text">Explore o mundo para ser um mestre Pokémon.</p>
+            <img src="./img/icone/heart-fill.svg" alt="icone-like" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row linha-games">
+      <div class="col-md-3">
+        <div class="card" onclick="salvarEAbrirNovaPagina(this)" data-nome="Castlevania" data-imagem="castlevania"
+          data-qtd_imagem="4"
+          data-descricao="[Castlevania] A saga do Clã Belmont para derrotar o terrível Conde Drácula.">
+          <img src="./img/card/castlevania.jpg" class="card-img-top" alt="castlevania">
+          <div class="card-body">
+            <h5 class="card-title">Castlevania</h5>
+            <p class="card-text">A saga do Clã Belmont para derrotar o terrível Conde Drácula.</p>
+            <img src="./img/icone/heart-fill.svg" alt="icone-like" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" onclick="salvarEAbrirNovaPagina(this)" data-nome="Metroid" data-imagem="metroid"
+          data-qtd_imagem="4"
+          data-descricao="[Metroid] A caçadora de recompensas mais famosa da Nintendo, Samus Aran, explorando as galáxias, atrás dos terríveis piratas do espaço, liderados pelo maléfico Ripley e a manipuladora Mother Brain.">
+          <img src="./img/card/metroid.jpg" class="card-img-top" alt="metroid">
+          <div class="card-body">
+            <h5 class="card-title">Metroid</h5>
+            <p class="card-text">A caçadora de recompensas mais famosa da Nintendo, Samus Aran, explorando as galáxias,
+              atrás dos terríveis piratas do espaço, liderados pelo maléfico Ripley e a manipuladora Mother Brain.</p>
+            <img src="./img/icone/heart-fill.svg" alt="icone-like" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" onclick="salvarEAbrirNovaPagina(this)" data-nome="Final Fantasy" data-imagem="finalFantasy"
+          data-qtd_imagem="6" data-descricao="[Final Fantasy] A franquia aclamada de RPG de turno.">
+          <img src="./img/card/finalFantasy.jpg" class="card-img-top" alt="finalFantasy">
+          <div class="card-body">
+            <h5 class="card-title">Final Fantasy</h5>
+            <p class="card-text">A franquia aclamada de RPG de turno.</p>
+            <img src="./img/icone/heart-fill.svg" alt="icone-like" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card" onclick="salvarEAbrirNovaPagina(this)" data-nome="Chrono Trigger" data-imagem="chronoTrigger"
+          data-qtd_imagem="4"
+          data-descricao="[Chrono Trigger] Famoso RPG de turno desenhado pelo grande artista Akira Toriyama, entre outros grandes artistras.">
+          <img src="./img/card/chronoTrigger.jpg" class="card-img-top" alt="chronoTrigger">
+          <div class="card-body">
+            <h5 class="card-title">Chrono Trigger</h5>
+            <p class="card-text">Famoso RPG de turno desenhado pelo grande artista Akira Toriyama, entre outros grandes
+              artistras.</p>
+            <img src="./img/icone/heart-fill.svg" alt="icone-like" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seu-email">
+    <div class="alert alert-dark" role="alert">
+      Deixe o seu e-mail
+    </div>
+    <div class="input-group">
+      <div class="input-group-text" id="btnGroupAddon">@</div>
+      <input type="text" class="form-control" placeholder="E-mail" aria-label="Input group example"
+        aria-describedby="btnGroupAddon">
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      Site desenvolvido, junto
+      com a <a href="https://escoladevs.com" target="_blank">
+        escolaDevs</a>, por <a href="https://www.linkedin.com/in/andré-luiz-quintana-castiglioni-a41102242/"
+        target="_blank"> André Castiglioni</a>
+    </p>
+  </footer>
+</body>
+
+</html>
